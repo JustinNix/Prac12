@@ -32,15 +32,21 @@ def is_long_word(word, length=5):
 
 def format_phrase(phrase):
     """
-    >>> format_phrase(phrase)
-    ? how to make this the phrase
+    format a phrase as a sentence - starting with a capital and ending with a single full stop
+
+    >>> format_phrase('hello')
+    'Hello.'
+    >>> format_phrase('It is an ex parrot.')
+    'It is an ex parrot.'
+    >>> format_phrase('This is correct.')
+    'This is correct.'
     """
     if phrase[0].isupper() and phrase[-1] == '.':
         return phrase
     else:
         return "not a good phrase"
 
-phrase = format_phrase(input("enter a phrase: "))
+#phrase = format_phrase(input("enter a phrase: "))
 
 
 def run_tests():
